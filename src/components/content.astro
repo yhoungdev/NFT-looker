@@ -1,0 +1,67 @@
+---
+    const nfts = [
+         {
+            id:3,
+            img:"shirtless.svg"
+        },
+        {
+            id:1,
+            img:"smoky.svg"
+        },
+         {
+            id:2,
+            img:"smile.svg"
+        },
+         
+        
+
+    ]
+---
+<html>
+    <header>
+
+        <style>
+        
+            @import '../styles/global.css';
+        
+            .nft-lanes {
+                display: flex;
+                margin-top: 5em;
+                justify-content: center;
+            }
+        </style>
+
+
+    </header>
+    <body>
+        <!--header part-->
+        <div class="section-content mt-5">
+
+            <div class="container">
+            
+                    <center>
+                    <h2 class="texty">
+                        See Amazing NFTs
+                    </h2>
+                </center>
+
+                <div class="nft-lanes mt-5">
+
+                    {
+                       nfts.map( nft => (
+                        
+                             <img src={`../../public/assets/images/${nft.img}`}/>
+                        
+                       ))
+                    }
+
+                </div>
+        
+
+            </div>
+            
+        </div>
+        
+    </body>
+
+</html>

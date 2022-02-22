@@ -10,3 +10,5 @@
     font-family: Recoleta;
     src: url(../../public/assets/fonts/Recoleta-Bold/Recoleta-Bold.ttf);
 }
+
+@import url('../styles/general.css');
