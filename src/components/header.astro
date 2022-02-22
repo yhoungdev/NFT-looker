@@ -1,0 +1,50 @@
+---
+    import Btn from './btn.astro'
+---
+
+<html>
+    <head>
+        <style >
+            header {
+                
+                /* position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 999; */
+                padding: 1em 9%;
+            }
+
+            /* for small devices  */
+
+            @media only screen and (max-width:670px) {
+               
+                header {
+                    padding: 1em 2em;
+                }
+
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <header class="flex justify-between  ">
+
+            <div className="logo">
+                Logo
+            </div>
+
+            <div class="nav ">
+                <ul class="inline-flex">
+                    <li class="mr-4">Join</li>
+                    <li>
+                        <Btn name="Join community" />
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+    </body>
+</html>

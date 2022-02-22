@@ -1,6 +1,12 @@
 *{
-    padding: 0.5em;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
+/* import bootstrap.bootstrap */
+@font-face {
+    font-family: Recoleta;
+    src: url(../../public/assets/fonts/Recoleta-Bold/Recoleta-Bold.ttf);
+}

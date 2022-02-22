@@ -1,26 +1,23 @@
 ---
-	import Homepage from './homepage/landing.jsx'
-
+	import Homepage from './homepage/landing.astro'
 	let title = " Hali Looker "
 ---
 <html lang="en">
 <head> 
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>{title}</title>
 
+	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<style global>
-		@import "../styles/global.css";
-		@import "../styles/home.css";
-	</style>
+	<link rel="stylesheet" href="../../src/styles/global.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 <body>
-	<main>
-		
 		<Homepage/>
-		
-	</main>
+	
 </body>
 </html>
