@@ -11,4 +11,8 @@
     src: url(../../public/assets/fonts/Recoleta-Bold/Recoleta-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Euclid';
+    src: url('../../public/assets/fonts/Euclid/Euclid\ Circular\ A\ Regular.ttf')
+}
 @import url('../styles/general.css');

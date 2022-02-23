@@ -1,5 +1,6 @@
 ---
     import Btn from './btn.astro'
+    import {Icon} from 'astro-icon'
 ---
 
 <html>
@@ -13,7 +14,19 @@
                 right: 0;
                 z-index: 999; */
                 padding: 1em 9%;
+                font-family: Euclid;
+                font-weight: bold;
             }
+
+            header ul {
+                  display: inline-flex;
+            }
+            header ul li {
+                margin-left: 2em;
+              
+            }
+
+        
 
             /* for small devices  */
 
@@ -37,6 +50,7 @@
 
             <div class="nav ">
                 <ul class="inline-flex">
+                    <li> <Icon name="bi:moon-fill" width="20" class="cursor-pointer"/></li>
                     <li class="mr-4">Join</li>
                     <li>
                         <Btn name="Join community" />

@@ -1,4 +1,5 @@
-.texty {
-    font-family: 2em;
-    color: red;
+.title {
+    font-size: 2em;
+    font-family: Euclid;
+    font-weight: bold;
 }
