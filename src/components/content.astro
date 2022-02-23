@@ -1,5 +1,6 @@
 ---
     //impoty 
+    import Nfts from './nfts.astro'
   
     const nfts = [
          {
@@ -16,6 +17,42 @@
         },
          
         
+
+    ]
+
+    //showcase NFTs
+    const showCase = [
+        //list out NFTs in arrays 
+        {
+            id:1,
+            img:"white.svg",
+            name:"white Smokey",
+            profile:"white",
+            price:10
+        },
+        {
+            id:1,
+            img:"smok1.svg",
+            name:"white Smokey",
+            profile:"white",
+            price:10
+        },
+        {
+            id:1,
+            img:"smok2.svg",
+            name:"white Smokey",
+            profile:"white",
+             price:10
+        },
+        ,
+        {
+            id:1,
+            img:"smok2.svg",
+            name:"white Smokey",
+            profile:"white",
+             price:10
+        }
+
 
     ]
 ---
@@ -59,6 +96,38 @@
                     }
 
                 </div>
+
+                <!--section section-->
+                <section class="others mt-4 container">
+                    <center>
+                         <h2 class="title">
+                           See Amazing NFTs
+                         </h2>
+                    </center>
+
+
+                    <!--nft cards -->
+
+                    <div class="flex">
+                        
+                        {
+                            // now map through NFts list 
+                            showCase.map( (nft, id) => {
+                                    const {name, img, profile, price} =nft;
+                                return (
+                                        <Nfts
+                                            name= {name}
+                                            price={price}
+                                            img={`../../public/assets/images/${img}`}
+                                            profile={`../../public/assets/images/${img}`}
+                                        />
+                                )
+                            })
+                        }
+                       
+                    </div>
+                
+                </section>
         
 
             </div>

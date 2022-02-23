@@ -1,0 +1,28 @@
+---
+    //make props for items
+    const {name, img, price, profile} = Astro.props;
+---
+<html>
+
+    <head>
+    
+    </head>
+
+    <body>
+
+            <div class="nft-card m-2 relative">
+
+                <img src={img} alt="">
+
+                <div class="detailed">
+
+                    <div class="h4"> {name} </div>
+
+                    <small><b> {price} </b></small>
+
+                    <img src={profile} alt="" width="50" class="rounded-full">
+                </div>
+            </div>
+
+    </body>
+</html>
