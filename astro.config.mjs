@@ -15,4 +15,9 @@ export default {
   renderers: [
     '@astrojs/renderer-react'
   ],
+  vite:{
+    ssr:{
+      external:["svgo"]
+    }
+  }
 };
